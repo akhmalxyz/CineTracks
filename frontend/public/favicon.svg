@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CineTracks Favicon</title>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="cineGradient">
+            <stop stop-color="#4F46E5" offset="0%"></stop>
+            <stop stop-color="#6366F1" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="CineTracksFavicon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <!-- Background circle -->
+        <circle id="Background" fill="url(#cineGradient)" cx="16" cy="16" r="16"></circle>
+        
+        <!-- Film strip -->
+        <g id="FilmStrip" transform="translate(6.000000, 6.000000)" fill="#FFFFFF">
+            <!-- Film reel/strip outer -->
+            <path d="M20,10 C20,15.5228475 15.5228475,20 10,20 C4.4771525,20 0,15.5228475 0,10 C0,4.4771525 4.4771525,0 10,0 C15.5228475,0 20,4.4771525 20,10 Z M18,10 C18,5.581722 14.418278,2 10,2 C5.581722,2 2,5.581722 2,10 C2,14.418278 5.581722,18 10,18 C14.418278,18 18,14.418278 18,10 Z" id="OuterRing" fill-rule="nonzero"></path>
+            
+            <!-- Film perforations - 8 holes around the circle -->
+            <circle id="Hole1" cx="10" cy="2" r="1.5"></circle>
+            <circle id="Hole2" cx="14.5" cy="4.5" r="1.5"></circle>
+            <circle id="Hole3" cx="16" cy="10" r="1.5"></circle>
+            <circle id="Hole4" cx="14.5" cy="15.5" r="1.5"></circle>
+            <circle id="Hole5" cx="10" cy="18" r="1.5"></circle>
+            <circle id="Hole6" cx="5.5" cy="15.5" r="1.5"></circle>
+            <circle id="Hole7" cx="4" cy="10" r="1.5"></circle>
+            <circle id="Hole8" cx="5.5" cy="4.5" r="1.5"></circle>
+            
+            <!-- Play triangle in center -->
+            <path d="M8,6 L14,10 L8,14 L8,6 Z" id="PlayButton"></path>
+        </g>
+    </g>
+</svg>
