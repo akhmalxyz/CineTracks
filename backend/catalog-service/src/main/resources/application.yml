@@ -1,0 +1,33 @@
+spring:
+  config:
+    import : optional:file:.env[.properties]
+    
+  application:
+    name: catalog-service
+
+  datasource:
+    url: jdbc:postgresql://localhost:${POSTGRES_PORT}/${POSTGRES_DB}?sslmode=disable
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 8082
+  forward-headers-strategy: framework
+
+jwt:
+  secret: ${JWT_SECRET}
+
+tmdb:
+  api-key: ${TMDB_API_KEY}
+  base-url: https://api.themoviedb.org/3
+
